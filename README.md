@@ -7,8 +7,12 @@ Payvment provides smart parking solutions.
 ## Non Funtional Requirements 
 
 1. Real-timeness?
-2. Low latency (How much latency is acceptable?)
-3. Scaling & High Throughput( 100 parking places * 1000)
+2. Strong Consistency & High Confidence score
+3. Low latency (How much latency is acceptable?)
+4. Availability (99.999%) - Fault tolerance
+
+## Scale Estimation
+6. Scaling & High Throughput( 100 parking places * 1000)
 (10^5/10^5 = 1 QPS) which is low
 
 ## Functional Requirements
@@ -23,12 +27,9 @@ Payvment provides smart parking solutions.
 2. License Plate detection (Bounding Box)
 3. OCR (Easy OCR)
 
-Datasets 
-1. 
-
 
 ## Context/Decision Making: 
 1. Training specific to a number plates region (will lead to higher confidence)
 2. Processing on Server vs Edge computing for realtimeness
 
-Edge cases: 
+## Edge cases: 
