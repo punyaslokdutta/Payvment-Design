@@ -21,6 +21,38 @@ Payvment provides smart parking solutions.
 2. Acurracy -> [[position, "ABC", confidence]]
 3. accessible by api v1/vehicle/{license_plate_no}
 
+# DB model 
+
+Possible MongoDb Schema 
+
+```json
+{
+  "_id": "ObjectId", // MongoDB automatically generates a unique identifier for each document
+  "licensePlate": {
+    "plateNumber": "String",
+    "confidenceLevel": "Number"
+  },
+  "region": {
+    "country": "String",
+    "stateProvince": "String"
+  },
+  "vehicleType": "String", // Big Truck, Bus, Motorcycle, Pickup Truck, Sedan, SUV, Van, Unknown
+  "makeModel": {
+    "make": "String",
+    "model": "String"
+  },
+  "color": "String", // Black, Blue, Brown, Green, Red, Silver, White, Yellow, Unknown
+  "directionOfTravel": {
+    "degree": "Number",
+    "unit": "String" // Degrees, Radians, etc. (based on your preference)
+  },
+  "dwellTime": "Number", // Time in seconds
+  "vehicleOrientation": "String", // Additional information about vehicle orientation if needed
+  "timestamp": "Date" // Timestamp of when the record was created
+}
+```
+
+
 
 ## ML Models
 1. Object Detection -> Yolo V8 Pretrained(Car, Bike , Truck)
