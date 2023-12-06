@@ -1,6 +1,8 @@
 # Payvment-Design
 Payvment provides smart parking solutions.
 
+![](https://www.axiomtek.com/Download/images/ANPR-parking.png)
+
 
 ## Non Funtional Requirements 
 
